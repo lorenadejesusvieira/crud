@@ -296,7 +296,7 @@
 
          <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Tabela Cursos</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Tabela Alunos</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -325,14 +325,18 @@
 
                       <?php
 
-                      $consulta = "SELECT * FROM cursos";
+                      $consulta = "SELECT * FROM alunos";
 
                       foreach ($conexao->query($consulta) as $linha){
                       ?>
 
                       <tr>
-                      <td> <?php echo "{$linha['cod']}"; ?> </td>
-                      <td> <?php echo "{$linha['curso']}"; ?> </td>
+                      <td> <?php echo "{$linha['rm']}"; ?> </td>
+                      <td> <?php echo "{$linha['nome']}"; ?> </td>
+                      <td> <?php echo "{$linha['idade']}"; ?> </td>
+                      <td> <?php echo "{$linha['email']}"; ?> </td>
+                      <td> <?php echo "{$linha['telefone']}"; ?> </td>
+                      <td> <?php echo "{$linha['cidade']}"; ?> </td>
                       </tr>
 
                       <?php
@@ -345,6 +349,59 @@
               </div>
             </div>
           </div>
+
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Tabela Matrículas</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Matrícula</th>
+                      <th>Data da Matrícula</th>
+                      <th>RM do Aluno</th>
+                      <th>Código do Curso</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Matrícula</th>
+                      <th>Data da Matrícula</th>
+                      <th>RM do Aluno</th>
+                      <th>Código do Curso</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+
+                      <?php
+
+                      $consulta = "SELECT * FROM matricula";
+
+                      foreach ($conexao->query($consulta) as $linha){
+                      ?>
+
+                      <tr>
+                      <td> <?php echo "{$linha['matricula']}"; ?> </td>
+                      <td> <?php echo "{$linha['datamat']}"; ?> </td>
+                      <td> <?php echo "{$linha['rm_aluno']}"; ?> </td>
+                      <td> <?php echo "{$linha['cod_curso']}"; ?> </td>
+                      </tr>
+
+                      <?php
+                      }
+
+                      ?>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
 
         </div>
         <!-- /.container-fluid -->

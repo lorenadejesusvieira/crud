@@ -49,7 +49,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Cadastro de Curso</span></a>
+          <span>Dashboard</span></a>
       </li>
 
       <!-- Divider -->
@@ -236,23 +236,21 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Cadastro de Curso</h1>
+            <h1 class="h3 mb-0 text-gray-800">Painel</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Gerar relatório</a>
           </div>
 
           <div class="container-fluid">
 
           <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Cadastro de Curso</h1>
           
-
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             
             <div class="card-body">
               <div class="responsive">
-                
-
-                    <div class="row">
+                <div class="row">
                    
                     <div class="col-lg-12">
                       <div class="p-5">
@@ -269,15 +267,14 @@
                             Cadastrar
                           </a>
                         </form>
-                     
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
         </div>
         <!-- /.container-fluid -->
