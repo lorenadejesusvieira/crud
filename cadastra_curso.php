@@ -15,7 +15,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>Cadastro de Curso</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -49,7 +49,7 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Cadastro de Curso</span></a>
       </li>
 
       <!-- Divider -->
@@ -236,115 +236,48 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Painel</h1>
+            <h1 class="h3 mb-0 text-gray-800">Cadastro de Curso</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Gerar relatório</a>
           </div>
 
           <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Tabelas</h1>
-          <p class="mb-4">Tabelas de Controle da Etec MCM</p>
-          <!--<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>-->
-
+          
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Tabela Cursos</h6>
-            </div>
+            
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Código Curso</th>
-                      <th>Nome Curso</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Código Curso</th>
-                      <th>Nome Curso</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
+              <div class="responsive">
+                
 
-                      <?php
+                    <div class="row">
+                   
+                    <div class="col-lg-12">
+                      <div class="p-5">
+                        <div class="text-center">
+                          <h1 class="h4 text-gray-900 mb-2">Cadastre seu Curso!</h1>
+                    
+                        </div>
+                        <form class="user">
+                          
+                          <div class="form-group">
+                            <input type="curso" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="cursoHelp" placeholder="Coloque seu curso...">
+                          </div>
+                          <a href="login.html" class="btn btn-primary btn-user btn-block">
+                            Cadastrar
+                          </a>
+                        </form>
+                     
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                      $consulta = "SELECT * FROM cursos";
-
-                      foreach ($conexao->query($consulta) as $linha){
-                      ?>
-
-                      <tr>
-                      <td> <?php echo "{$linha['cod']}"; ?> </td>
-                      <td> <?php echo "{$linha['curso']}"; ?> </td>
-                      </tr>
-
-                      <?php
-                      }
-
-                      ?>
-
-                  </tbody>
-                </table>
+                </div>
               </div>
             </div>
-          </div>
-
-
-         <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Tabela Cursos</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>RM Aluno</th>
-                      <th>Nome Aluno</th>
-                      <th>Idade Aluno</th>
-                      <th>E-mail Aluno</th>
-                      <th>Telefone Aluno</th>
-                      <th>Cidade Aluno</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>RM Aluno</th>
-                      <th>Nome Aluno</th>
-                      <th>Idade Aluno</th>
-                      <th>E-mail Aluno</th>
-                      <th>Telefone Aluno</th>
-                      <th>Cidade Aluno</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-
-                      <?php
-
-                      $consulta = "SELECT * FROM cursos";
-
-                      foreach ($conexao->query($consulta) as $linha){
-                      ?>
-
-                      <tr>
-                      <td> <?php echo "{$linha['cod']}"; ?> </td>
-                      <td> <?php echo "{$linha['curso']}"; ?> </td>
-                      </tr>
-
-                      <?php
-                      }
-
-                      ?>
-
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
 
         </div>
         <!-- /.container-fluid -->
